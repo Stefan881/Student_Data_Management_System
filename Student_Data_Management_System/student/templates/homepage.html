@@ -1,0 +1,62 @@
+
+{% load static %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer with animation</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script src="https://kit.fontawesome.com/f14e245263.js"></script>
+</head>
+<body>
+    <footer>
+        <div class="row">
+            <div class="col">
+                <!--<img src="logo.jpg" alt="logo">-->
+                <p>At Unify Software Developers, we envision a future where coding is not just a skill but a transformative force that 
+                    empowers individuals to shape a brighter, more innovative world. Our coding school is a beacon of inspiration and 
+                    knowledge, dedicated to nurturing the next generation of tech leaders and problem solvers.</p>
+            </div>
+            <div class="col">
+                <h3>Office <div class="underline"><span></span></div></h3>
+                <p>Kenyatta Avenue</p>
+                <p>Nairobi,CBD</p>
+                <P>Nairobi,Box 708-30202,Kenya</P>
+                <p class="email-id">ondeyostephen0@gmail.com</p>
+                <h4>+254115539799 , +254717457523</h4>
+            </div>
+            <div class="col">
+                <h3>Links <div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Subscribe To Our Newsletter <div class="underline"><span></span></div></h3>
+                <!--<form method="POST">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <i class="far fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email id" required> 
+                    <button type="submit"><i class="fas fa-long-arrow-right"></i></button>
+                </form>-->
+                <p> Click <a href="{% url 'letter-index' %}"> here </a> to subscribe to our Newsletter to stay updated on any news and announcements made.</p>
+                <div class="social-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Unify Software Developers  &copy; 2023 - All Rights Reserved</p>
+    </footer>
+</body>
+</html>

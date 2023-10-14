@@ -34,7 +34,7 @@ form h2{
     outline: 0;
     border: 1px solid black;
 }
-button{
+.login_registration_buttons{
     border: 0;
     background-color:blue;
     padding: 10px 0;
@@ -46,7 +46,7 @@ button{
     
 
 }
-button:hover{
+.login_registration_buttons:hover{
     background-color: green;
 }
 section{
